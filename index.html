@@ -283,51 +283,31 @@
 <div class="container bg-white" style="margin-bottom: 20px; padding-bottom:
 10px; padding-top: 10px;">
 
-<!--form method="POST"
-action="https://formspree.io/cagan@fiberli.com"-->
-<form id="add-user-input">
-<div class="form-group">
-<label for="inputName">Name*</label>
-<input type="text" class="form-control" name="name" id="inputName" 
-as the required field" required>
-</div> 
-<div class="form-group">
-<label for="inputEmail4">Email*</label>
-<input type="email" class="form-control" name="email" id="inputEmail4" required>
-</div>
+		<!--form method="POST"
+		action="https://formspree.io/cagan@fiberli.com"-->
+		<form id="add-user-input">
+			<div class="form-group">
+			<label for="name">Name*</label>
+			<input type="text" class="form-control" name="name" id="name" 
+			as the required field" required>
+			</div> 
+			<div class="form-group">
+			<label for="email">Email*</label>
+			<input type="email" class="form-control" name="email" id="email" required>
+			</div>
 
-<div class="form-group">
-<label for="exampleTextarea">Message</label>
-<textarea class="form-control" name="message" id="exampleTextarea"
-rows="3"></textarea>
-</div>
-<!--button type="submit" class="btn btn-primary">Send</button-->
-<button class="btn btn-primary">Send</button>
-
+			<div class="form-group">
+			<label for="message">Message</label>
+			<textarea class="form-control" name="message" id="message"
+			rows="3"></textarea>
+			</div>
+			<!--button type="submit" class="btn btn-primary">Send</button-->
+			<button type="submit" class="btn btn-primary">Send</button>
+		</form>
       </div>
       </section>
 
     </div>
-
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
-<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
-    
-<script>
-
-  // Initialize Firebase
-  var config = {
-    apiKey: "AIzaSyCJhm4JnZ4SBDrgcoTz8adhXM4M2BOxHEE",
-    authDomain: "kutlucagan-resume.firebaseapp.com",
-    databaseURL: "https://kutlucagan-resume.firebaseio.com",
-    projectId: "kutlucagan-resume",
-    storageBucket: "kutlucagan-resume.appspot.com",
-    messagingSenderId: "670412393667"
-  };
-  firebase.initializeApp(config);
-
-  // Initialize Cloud Firestore through Firebase
-var db = firebase.firestore();
-</script>
 
 
     <!-- Bootstrap core JavaScript -->
@@ -360,7 +340,29 @@ var db = firebase.firestore();
 			document.getElementsByClassName('lead')[0].innerHTML = 'Thank you for visiting';
 		}
 	</script>
-	<script src="js/addData.js"></script>
+
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-app.js"></script>
+	<script src="https://www.gstatic.com/firebasejs/5.5.5/firebase-firestore.js"></script>
+	    
+	<script>
+
+	  // Initialize Firebase
+	  var config = {
+	    apiKey: "AIzaSyCJhm4JnZ4SBDrgcoTz8adhXM4M2BOxHEE",
+	    authDomain: "kutlucagan-resume.firebaseapp.com",
+	    databaseURL: "https://kutlucagan-resume.firebaseio.com",
+	    projectId: "kutlucagan-resume",
+	    storageBucket: "kutlucagan-resume.appspot.com",
+	    messagingSenderId: "670412393667"
+	  };
+	  firebase.initializeApp(config);
+
+	  // Initialize Cloud Firestore through Firebase
+	  var db = firebase.firestore();
+	</script>
+
+
+	<script src="js/data.js"></script>
 
   </body>
 
